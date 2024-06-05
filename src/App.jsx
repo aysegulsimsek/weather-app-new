@@ -4,7 +4,7 @@ import axios from 'axios'
 import { RiCelsiusFill } from "react-icons/ri";
 
 function App() {
-  const API_KEY = '62d6b151558b4e96c9011a4be8b14084';
+  const API_KEY = "62d6b151558b4e96c9011a4be8b14084";
   const [city, setCity] = useState("");
   const [info, setInfo] = useState({});
   const [isActive, setIsActive] = useState(false);
