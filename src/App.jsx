@@ -15,7 +15,7 @@ function App() {
 
   const handleClick = async () => {
     const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=tr&appid=${API_KEY}&units=metric`
-    console.log('click oldu', BASE_URL);
+    console.log( BASE_URL);
     await axios(BASE_URL).then(async data => {
       await setInfo(data.data)
     }).catch(err => console.log("Hatanız : ", err));
