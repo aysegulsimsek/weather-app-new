@@ -4,7 +4,7 @@ import axios from 'axios'
 import { RiCelsiusFill } from "react-icons/ri";
 
 function App() {
-  const API_KEY = "62d6b151558b4e96c9011a4be8b14084";
+ 
   const [city, setCity] = useState("");
   const [info, setInfo] = useState({});
   const [isActive, setIsActive] = useState(false);
@@ -13,8 +13,10 @@ function App() {
 
   }
 
+
+
   const handleClick = async () => {
-    const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=tr&appid=${API_KEY}&units=metric`
+    const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=tr&appid=${import.meta.env.VITE_API_KEY}&units=metric`
     console.log( BASE_URL);
     await axios(BASE_URL).then(async data => {
       await setInfo(data.data)
