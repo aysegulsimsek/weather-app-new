@@ -12,11 +12,6 @@ function App() {
     setCity(e.target.value)
 
   }
-//bundan bahsediyorum işt. amaç key in görünmemesini sağlamak.
-//anlamıyor musun ne dedğimi 
-//diyorum ki gitignore dosyasından .env i silersek gösterilmiş olur key açık. bi sn. bak .env yok .ama istersen gitignore da olmaz.evet olmasın. o zaman onun da adını yaz :)orospusun ncdjvck
-
-
   const handleClick = async () => {
     const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=tr&appid=${import.meta.env.VITE_API_KEY}&units=metric`
     console.log( BASE_URL);
@@ -25,9 +20,6 @@ function App() {
     }).catch(err => console.log("Hatanız : ", err));
     setIsActive(true);
   }
-
-
-
   return (
     <div>
       <h1>Hava Durumu Uygulaması</h1>
