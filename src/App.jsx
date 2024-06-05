@@ -12,7 +12,9 @@ function App() {
     setCity(e.target.value)
 
   }
-
+//bundan bahsediyorum işt. amaç key in görünmemesini sağlamak.
+//anlamıyor musun ne dedğimi 
+//diyorum ki gitignore dosyasından .env i silersek gösterilmiş olur key açık. bi sn. bak .env yok .ama istersen gitignore da olmaz.evet olmasın. o zaman onun da adını yaz :)orospusun ncdjvck
 
 
   const handleClick = async () => {
