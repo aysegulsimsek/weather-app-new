@@ -1,4 +1,6 @@
-# React + Vite
+#Weather App with used react
+
+npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
